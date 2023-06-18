@@ -12,13 +12,13 @@ let en=0;
 
 //song detailsa
 let songs = [
-    { songName: "Let me love u", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
-    { songName: "dangerous woman", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
-    { songName: "7 rings", filePath: "songs/3.mp3", coverPath: "covers/3.jpg" },
-    { songName: "don't call me angel", filePath: "songs/4.mp3", coverPath: "covers/4.jpg" },
-    { songName: "position", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
-    { songName: "side-to-side", filePath: "songs/6.mp3", coverPath: "covers/1.jpg" },
-    { songName: "god is a woman", filePath: "songs/7.mp3", coverPath: "covers/6.jpg" }
+    { songName: "Let me love u", filePath: "songs/1.mp3", coverPath: "1.jpg" },
+    { songName: "dangerous woman", filePath: "songs/2.mp3", coverPath: "2.jpg" },
+    { songName: "7 rings", filePath: "songs/3.mp3", coverPath: "c3.jpg" },
+    { songName: "don't call me angel", filePath: "songs/4.mp3", coverPath: "4.jpg" },
+    { songName: "position", filePath: "songs/5.mp3", coverPath: "5.jpg" },
+    { songName: "side-to-side", filePath: "songs/6.mp3", coverPath: "1.jpg" },
+    { songName: "god is a woman", filePath: "songs/7.mp3", coverPath: "6.jpg" }
 ]
 
 
