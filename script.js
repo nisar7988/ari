@@ -1,6 +1,6 @@
 // initializing the variables
 let volumeDisplay = document.getElementById('volume-value')
-let audioElement = new Audio('songs/1.mp3')
+let audioElement = new Audio('1.mp3')
 let masterSongName = document.getElementById('masterSongName')
 let songItems = Array.from(document.getElementsByClassName('songItem'))
 let songIndex = 0;
@@ -12,13 +12,13 @@ let en=0;
 
 //song detailsa
 let songs = [
-    { songName: "Let me love u", filePath: "songs/1.mp3", coverPath: "1.jpg" },
-    { songName: "dangerous woman", filePath: "songs/2.mp3", coverPath: "2.jpg" },
-    { songName: "7 rings", filePath: "songs/3.mp3", coverPath: "c3.jpg" },
-    { songName: "don't call me angel", filePath: "songs/4.mp3", coverPath: "4.jpg" },
-    { songName: "position", filePath: "songs/5.mp3", coverPath: "5.jpg" },
-    { songName: "side-to-side", filePath: "songs/6.mp3", coverPath: "1.jpg" },
-    { songName: "god is a woman", filePath: "songs/7.mp3", coverPath: "6.jpg" }
+    { songName: "Let me love u", filePath: "1.mp3", coverPath: "1.jpg" },
+    { songName: "dangerous woman", filePath: "2.mp3", coverPath: "2.jpg" },
+    { songName: "7 rings", filePath: "3.mp3", coverPath: "3.jpg" },
+    { songName: "don't call me angel", filePath: "4.mp3", coverPath: "4.jpg" },
+    { songName: "position", filePath: "5.mp3", coverPath: "5.jpg" },
+    { songName: "side-to-side", filePath: "6.mp3", coverPath: "1.jpg" },
+    { songName: "god is a woman", filePath: "7.mp3", coverPath: "6.jpg" }
 ]
 
 
@@ -76,7 +76,7 @@ audioElement.addEventListener('timeupdate', () => {
     songIndex = parseInt(e.target.id)
     e.target.classList.remove('fa-play-circle')
     e.target.classList.add('fa-pause-circle')
-    audioElement.src = `songs/${songIndex}.mp3`
+    audioElement.src = `${songIndex}.mp3`
     masterSongName.innerText = songs[songIndex - 1].songName
     audioElement.currentTime = 0;
     audioElement.play()
@@ -94,7 +94,7 @@ audioElement.addEventListener('timeupdate', () => {
         else
             songIndex += 1
 
-        audioElement.src = `songs/${songIndex + 1}.mp3`
+        audioElement.src = `${songIndex + 1}.mp3`
         masterSongName.innerText = songs[songIndex].songName
         audioElement.currentTime = 0;
         audioElement.play()
@@ -108,7 +108,7 @@ audioElement.addEventListener('timeupdate', () => {
         else
             songIndex -= 1
 
-        audioElement.src = `songs/${songIndex + 1}.mp3`
+        audioElement.src = `${songIndex + 1}.mp3`
         masterSongName.innerText = songs[songIndex].songName
         audioElement.currentTime = 0;
         audioElement.play()
